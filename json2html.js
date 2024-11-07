@@ -1,7 +1,7 @@
 // Export default function to convert JSON to HTML table
 export default function json2html(data) {
-  // Define the headers based on all unique keys in the objects
-  const headers = [...new Set(data.flatMap(Object.keys))];
+  // Define the fixed headers
+  const headers = ["Name", "Age", "Gender"];
 
   // Start building the HTML table as a string
   let html = `<table data-user="pasunurikatyayini@gmail.com">`;
